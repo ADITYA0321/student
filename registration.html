@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+        <div class="container">
+            <form id="form" action="register.php" method="post">
+                <h2 class="reg">Registration</h2>
+                <p id="error"></p>
+                <div class="inputbox">
+                        <input type="text" id="username" name="username"  required>
+                        <span class="label">Username</span>
+                        <ion-icon name="person-add"></ion-icon>
+                </div>
+                     <div class="inputbox">
+                         <input type="email" id="email"required>
+                         <span>Email</span>
+                         <ion-icon name="mail"></ion-icon>
+                     </div>
+                <div class="inputbox">
+                    <input type="password" id="password" name="password" required>
+                    <span>Password</span>
+                    <ion-icon name="lock-open"></ion-icon>
+                </div>
+                <div class="inputbox">
+                    <input type="password" id="confirm_password" required>
+                    <span>Confirm Password</span>
+                    <ion-icon name="lock-open"></ion-icon>
+                </div>
+                
+                    <input class="btn" type="submit" value="Register" id="submit">
+                
+            
+
+
+            
+                
+
+
+
+
+
+
+            </form>
+
+        </div>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;    
+    background-image: url(/box.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.box{
+    width: 400px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(7px);
+
+    border-radius: 35px;
+    border: 3px solid rgba(225, 225, 225, 0.3);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5) ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    color: white;
+    padding: 20px 0;
+    font-size: 2em;
+    text-align: center;
+
+}
+.inputbox{
+    
+    width: 330px;
+    margin: 30px 0;
+    position: relative;
+    border-bottom: 3px solid white;
+    
+    
+}
+.inputbox input{
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    color: white;
+    padding: 0 30px 0 10px;    
+}
+.inputbox span{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+input:focus ~ span,
+input:valid ~ span{
+    top:-5px
+}
+.inputbox i{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: white;
+    
+}
+.link {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 1.2em;
+    
+    
+}
+.link a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.link a:hover{
+    text-decoration: none;
+    font-style: italic;
+    color: aqua;
+}
+#btn{
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+#btn:hover{
+    background-color: #2ecc71;
+    color: white;
+}
+
+    
+
